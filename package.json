@@ -1,0 +1,29 @@
+{
+  "name": "new-relic-test",
+  "version": "1.0.0",
+  "description": "New Relic Test",
+  "license": "UNLICENSED",
+  "main": "app.js",
+  "contributors": [
+    {
+      "name": "Armando Verduzco",
+      "email": "averduzco@cbtnuggets.com",
+      "slack": "averduzco"
+    }
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "export NODE_LOGGER_CONSOLE_LEVEL=debug NODE_LOGGER_CONSOLE=true NODE_ENV=test NODE_PATH=$(pwd)/node_modules SKIP_BOT_MESSAGES=true && find test -name '*_test.js' | xargs istanbul cover _mocha",
+    "lint": "./node_modules/.bin/eslint --ext .js .",
+    "serve:dev": "NODE_ENV=qa nodemon ./app.js",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Tiempo DEV",
+  "dependencies": {
+    "express": "^4.16.3",
+    "newrelic": "^4.8.1"
+  },
+  "devDependencies": {}
+}
