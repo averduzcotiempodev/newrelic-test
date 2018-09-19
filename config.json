@@ -1,0 +1,18 @@
+{
+    "settings": {
+        "apm": {
+            "newRelic": {
+                "distributedTracing": true
+            }
+        }
+    },
+    "keys": {
+        "apm": {
+            "newRelic": {
+                "test": {
+                    "licenseKey": "1db362c9e9debd8db3a486d18368614b92e611ed"
+                }
+            }
+        }
+    }
+}

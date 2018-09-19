@@ -23,6 +23,7 @@
   "author": "Tiempo DEV",
   "dependencies": {
     "express": "^4.16.3",
+    "lodash": "^4.17.11",
     "newrelic": "^4.8.1"
   },
   "devDependencies": {}
