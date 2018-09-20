@@ -1,0 +1,28 @@
+{
+    "settings": {
+        "apm": {
+            "newRelic": {
+                "distributedTracing": true,
+                "instrumentedServices": {
+                    "SQS": {
+                        "pushMethod": "sendMessage",
+                        "pullMethod": "receiveMessage"
+                    },
+                    "Kinesis": {
+                        "pushMethod": "putRecords",
+                        "pullMethod": "getRecords"
+                    }
+                 }
+            }
+        }
+    },
+    "keys": {
+        "apm": {
+            "newRelic": {
+                "test": {
+                    "licenseKey": "1db362c9e9debd8db3a486d18368614b92e611ed"
+                }
+            }
+        }
+    }
+}

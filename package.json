@@ -22,6 +22,7 @@
   },
   "author": "Tiempo DEV",
   "dependencies": {
+    "aws-sdk": "^2.319.0",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
     "newrelic": "^4.8.1"
